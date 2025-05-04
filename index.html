@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>شحن شدات ببجي UC - أرخص الأسعار | EM STORE</title>
+
+  <meta name="description" content="اشحن شدات ببجي موبايل UC بأمان وسرعة عبر ID من متجر EM STORE. نقدم أفضل أسعار شحن يوسي وعروض مستمرة. طرق دفع متنوعة تشمل فودافون كاش وأورانج كاش.">
+
+  <meta name="keywords" content="شحن شدات, شحن يوسي, uc, ببجي, ببجي موبايل, EM STORE, شحن شدات ببجي, شراء شدات, شحن uc, شدات رخيصة, شحن ID, فودافون كاش, اورانج كاش, انستا باي">
+
+  <link rel="shortcut icon" href="7785269-middle-removebg-preview.png" type="image/x-icon">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Lordicon -->
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS (RTL) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "EM STORE",
+    "url": "https://EM-STORE.vercel.app/", 
+    "description": "متجر EM STORE متخصص في شحن شدات ببجي موبايل UC بأمان وسرعة عبر ID بأفضل الأسعار.",
+    "image": "https://d.top4top.io/p_341146r5k0.jpg", 
+    "paymentAccepted": "Vodafone Cash, Orange Cash, InstaPay", 
+      "@type": "PostalAddress",
+      "addressCountry": "EG" 
+    },
+    "potentialAction": { 
+        "@type": "SearchAction",
+        "target": "YOUR_WEBSITE_URL_HERE/search?q={search_term_string}", 
+        "query-input": "required name=search_term_string"
+      }
+  }
+  </script>
+
+</head>
+<body>
+  <header class="header">
+    <img src="https://d.top4top.io/p_341146r5k0.jpg" alt="شعار متجر EM STORE لشحن شدات ببجي UC" class="logo" />
+    <span class="store-name">EM STORE</span> 
+  </header>
+
+  <!-- <div class="scrolling-text-container">
+    <p class="scrolling-text">أسعار شحن شدات PUBG Mobile UC | الشحن عن طريق الـ ID في EM STORE</p>
+  </div> -->
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">×</span>
+        <h2>تسجيل الدخول</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="usernameInput">اسم المستخدم:</label>
+                <input type="text" id="usernameInput" placeholder="أدخل اسم المستخدم" required>
+            </div>
+            <div class="form-group">
+                <label for="passwordInput">كلمة المرور:</label>
+                <input type="password" id="passwordInput" placeholder="أدخل كلمة المرور" required>
+            </div>
+            <p id="errorMessage" class="error-message"></p>
+            <button type="button" id="loginSubmitBtn">تسجيل</button>
+        </form>
+    </div>
+  </div>
+  <div class="container-fluid text-center mt-4 mb-3 px-0">
+    <div class="scrolling-text-container">
+      <p id="scrollingMessage" class="scrolling-text-single"></p>
+    </div>
+  </div>
+  
+
+  <div class="text-center my-4">
+    <h1 class="h2">💰 باقات شحن شدات ببجي UC المتوفرة 💰</h1> <!-- تغيير H1 إلى H2 إذا كان اسم المتجر H1 -->
+    
+  </div>
+
+  <div class="container">
+    <div id="cardsContainer" class="row g-3 px-3"></div>
+  </div>
+
+  <footer class=" text-white py-4 mt-5"> 
+    <div class="container">
+      <div class="row text-center justify-content-center align-items-start g-3"> <!-- g-3 لإضافة فجوات -->
+
+        <!-- واتساب -->
+        <div class="col-6 col-sm-4 col-md-auto mb-3"> <!-- تعديل الأعمدة لتوزيع أفضل -->
+          <a href="https://wa.me/201022091381" target="_blank" class="text-decoration-none d-block text-white">
+            <lord-icon
+              src="https://cdn.lordicon.com/hpivxauj.json"
+              trigger="hover"
+              colors="primary:#25d366"
+              style="width:50px;height:50px">
+            </lord-icon>
+            <p class="mt-1 mb-0 small">واتساب</p> <!-- تصغير الخط قليلاً -->
+          </a>
+        </div>
+
+        <!-- اتصال -->
+        <div class="col-6 col-sm-4 col-md-auto mb-3">
+          <a href="tel:+201022091381" class="text-decoration-none d-block text-white">
+            <lord-icon
+              src="https://cdn.lordicon.com/srsgifqc.json"
+              trigger="hover"
+              colors="primary:#0d6efd"
+              style="width:50px;height:50px">
+            </lord-icon>
+            <p class="mt-1 mb-0 small">اتصال</p>
+          </a>
+        </div>
+
+        <!-- طرق الدفع -->
+        <div class="col-6 col-sm-4 col-md-auto mb-3">
+          <a href="#" class="text-decoration-none d-block text-white footer-icon-link" data-bs-toggle="modal" data-bs-target="#paymentModal">
+            <lord-icon
+              src="https://cdn.lordicon.com/dwoxxgps.json"
+              trigger="hover"
+              colors="primary:#ffc107"
+              style="width:50px;height:50px">
+            </lord-icon>
+            <p class="mt-1 mb-0 small">طرق الدفع</p>
+          </a>
+        </div>
+
+        <!-- تليجرام -->
+        <div class="col-6 col-sm-4 col-md-auto mb-3">
+          <a href="https://t.me/@Emad_PUBG" target="_blank" class="text-decoration-none d-block text-white">
+            <lord-icon
+              src="https://cdn.lordicon.com/hpivxauj.json"
+              trigger="hover"
+              colors="primary:#229ED9"
+              style="width:50px;height:50px">
+            </lord-icon>
+            <p class="mt-1 mb-0 small">تليجرام</p>
+          </a>
+        </div>
+
+      </div> <!-- نهاية صف الأيقونات -->
+
+      <!-- زر تسجيل الدخول أو حقوق -->
+      <div class="row mt-3">
+        <div class="col text-center">
+          <button id="openLoginPopupBtn" class="btn btn-link text-white-50 text-decoration-none small"> <!-- تصغير الخط -->
+             © 2025 EM STORE - متخصصون في شحن شدات ببجي UC
+           </button>
+        </div>
+      </div>
+
+      <!-- SEO: جملة إضافية في الفوتر -->
+       <div class="text-center mt-2">
+           <p class="text-white-50 small">متجر EM STORE يوفر أسهل طرق شحن يوسي UC في مصر.</p>
+       </div>
+
+
+    </div> <!-- نهاية container الفوتر -->
+  </footer>
+  <!-- ===== نهاية الفوتر ===== -->
+
+  <!-- ===== Modal طرق الدفع (مع تصحيح الـ ID المكرر) ===== -->
+  <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="paymentModalLabel">نسخ رقم التحويل</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-center mb-4">اضغط على الزر لنسخ الرقم المناسب:</p>
+
+           <!-- خيار InstaPay (تم تصحيح الـ ID والـ data-copy-target) -->
+          <div class="d-flex justify-content-between align-items-center mb-3 p-2 border rounded">
+            <div>
+              <strong class="d-block">Insta Pay:</strong>
+              <span id="instaPayNumber">01022091381</span> <!-- ID فريد -->
+            </div>
+            <button class="btn btn-outline-primary btn-sm copy-btn" data-copy-target="#instaPayNumber"> <!-- استهداف الـ ID الصحيح -->
+              <i class="bi bi-clipboard"></i> نسخ
+            </button>
+          </div>
+
+          <!-- خيار فودافون كاش -->
+          <div class="d-flex justify-content-between align-items-center mb-3 p-2 border rounded">
+            <div>
+              <strong class="d-block">فودافون كاش:</strong>
+              <span id="vodafoneNumber">01022091381</span> <!-- ID الأصلي -->
+            </div>
+            <button class="btn btn-outline-danger btn-sm copy-btn" data-copy-target="#vodafoneNumber"> <!-- تغيير اللون لـ Vodafone -->
+              <i class="bi bi-clipboard"></i> نسخ
+            </button>
+          </div>
+
+          <!-- خيار أورانج كاش -->
+          <div class="d-flex justify-content-between align-items-center p-2 border rounded">
+            <div>
+              <strong class="d-block">أورانج كاش:</strong>
+              <span id="orangeNumber">01228435685</span>
+            </div>
+            <button class="btn btn-outline-warning btn-sm copy-btn" data-copy-target="#orangeNumber">
+              <i class="bi bi-clipboard"></i> نسخ
+            </button>
+          </div>
+
+          <!-- منطقة لعرض رسالة التأكيد -->
+          <div id="copyAlert" class="alert alert-success mt-3 d-none" role="alert">
+            تم نسخ الرقم بنجاح!
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ===== نهاية Modal طرق الدفع ===== -->
+
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Your Custom JS -->
+  <script src="index.js"></script>
+  
+
+
+</body>
+</html>

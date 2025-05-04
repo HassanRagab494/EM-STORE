@@ -1,0 +1,376 @@
+/* إعدادات عامة */
+body {
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(to right, #16222A, #3A6073);
+  color: #fff;
+  padding: 30px;
+  direction: rtl;
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+
+}
+
+/* الهيدر */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  color: white;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.store-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.scrolling-text-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #ccc;
+  color: black;
+  padding: 12px;
+  border-radius: 15px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.scrolling-text-single {
+  position: absolute;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 16px;
+  right: -100%;
+  animation: none;
+}
+
+@keyframes smooth-scroll {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+
+/* عنوان الصفحة */
+h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #fff;
+}
+
+/* تصميم زر */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* حاوية البطاقات */
+ #cardsContainer {
+  gap: 20px;
+  margin-top: 30px;
+} 
+
+/* بطاقات الأسعار */
+.card {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 10px auto;
+  min-width: 280px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(.9);
+}
+
+/* محتوى البطاقة */
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.uc-amount {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1e88e5;
+  padding-bottom: 10px;
+}
+
+.uc-price {
+  padding-right: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4caf50;
+}
+.uc-icon{
+  margin-top: 10px;
+  width: 4rem;
+}
+.uceg{
+  display: flex;
+  align-items: center;
+}
+.uc{
+  width: auto;
+  display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.foteer{
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}#openLoginPopupBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#openLoginPopupBtn:hover {
+  background-color: #0056b3;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex; /* للتوسيط */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: right;
+}
+
+.close-btn {
+  color: #aaa;
+  position: absolute;
+  left: 15px; /* تعديل لـ RTL */
+  top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.modal-content h1 {
+  margin-top: 0;
+  color: #fcfcfc;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.h2{
+  color: #fcfcfc !important;
+}
+/* تنسيقات جديدة لعناصر النموذج */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block; /* يجعل الـ label فوق الـ input */
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%; /* يأخذ العرض الكامل للمحتوى */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* يضمن أن padding لا يزيد العرض */
+  font-size: 1em;
+}
+
+/* تنسيق زر التسجيل */
+#loginSubmitBtn {
+  background-color: #28a745; /* لون أخضر */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* يأخذ العرض الكامل */
+  font-size: 16px;
+  margin-top: 10px; /* مسافة فوق الزر */
+}
+
+#loginSubmitBtn:hover {
+  background-color: #218838;
+}
+.btn{
+  background: transparent !important;
+  margin: auto;
+  color: #0056b3 !important;
+}
+
+/* تنسيق رسالة الخطأ */
+.error-message {
+  color: #dc3545; /* لون أحمر */
+  font-size: 0.9em;
+  text-align: center;
+  min-height: 1.2em; /* حجز مساحة حتى لو كانت فارغة */
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.custom-wrapper {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.custom-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.custom-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.custom-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.custom-btn-primary {
+  background-color: #0d6efd;
+}
+
+.custom-btn-secondary {
+  background-color: #6c757d;
+}
+
+.custom-btn:hover {
+  opacity: 0.9;
+}
+.custom-package-card {
+  background-color: #16222A;
+  color: #fcfcfc;
+  padding: 16px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.custom-package-title {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.custom-package-price {
+  margin-bottom: 15px;
+}
+
+.custom-package-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.custom-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.custom-btn-edit {
+  background-color: #0d6efd;
+}
+
+.custom-btn-delete {
+  background-color: #dc3545;
+}
+.custom-title {
+  text-align: center;
+  color: white !important;
+  margin-bottom: 30px;
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+  #cardsContainer {
+    grid-template-columns: repeat(2, 1fr); /* عمودين على الموبايل */
+  }
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>  EM-STORE-ADMIN</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="7785269-middle-removebg-preview.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+  
+
+
+  <div class="custom-wrapper">
+    <h1 class="custom-title">Admin control panel</h1>
+    <form id="ucForm">
+      <label for="ucAmount" class="custom-label">عدد UC:</label>
+      <input type="number" id="ucAmount" class="custom-input" required>
+
+      <label for="ucPrice" class="custom-label">السعر (جنيه):</label>
+      <input type="number" id="ucPrice" class="custom-input" required>
+
+      <div class="custom-buttons">
+        <button type="submit" class="custom-btn custom-btn-primary">إضافة</button>
+        <a href="index.html" class="custom-btn custom-btn-secondary">رجوع</a>
+      </div>
+    </form>
+  </div>
+
+  <h2 class="custom-title">الأسعار الحالية</h2>
+  <div id="cardsContainer" class="cards-container"></div>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="admin.js"></script>
+
+</body>
+</html>
