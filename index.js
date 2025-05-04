@@ -58,7 +58,7 @@ function renderPackages() {
 }
 renderPackages();
 const CORRECT_USERNAME = "EMSTORE"; 
-const CORRECT_PASSWORD = "2025"; 
+const CORRECT_PASSWORD = "Em202070"; 
 const REDIRECT_PAGE = "admin.html";
 
 const modal = document.getElementById("loginModal");
